@@ -1,6 +1,8 @@
 #include "std_lib_facilities.h"
 
 int main() {
+	cout << "Given input file is 'comma2.txt'\n";
+	cout << "Given output file is 'output.txt'\n";
 	cout << "Enter the input file name: ";
 	string iFile;// = "comma2.txt";
 	cin >> iFile;
@@ -12,7 +14,7 @@ int main() {
 	cin >> oFile;
 	ofstream ost{ oFile };
 	if (!ost) error("can't open output file");
-	
+
 	vector <string> text;
 	int hour;
 	char sep1;
